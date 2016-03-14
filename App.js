@@ -16,17 +16,27 @@ class App extends React.Component {
     }
 
     render() {
-        let txt = this.state.txt
         return (
             <div>
-                <input type="text"
-                       onChange={this.update} />
-                <h1>{txt} {this.props.cat}</h1>
+                <Widget txt={this.state.txt} update={this.update}/>
+                <Widget txt={this.state.txt} update={this.update}/>
+                <Widget txt={this.state.txt} update={this.update}/>
+                <Widget txt={this.state.txt} update={this.update}/>
+                <Widget txt={this.state.txt} update={this.update}/>
             </div>
         )
     }
 }
 
+const Widget = (props) => {
+    return (
+        <div>
+            <input type="text"
+                   onChange={props.update}/>
+            <h1>{props.txt}</h1>
+        </div>
+    )
+}
 
 // Kinda a type definition
 App.propTypes = {
