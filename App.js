@@ -38,19 +38,10 @@ const Widget = (props) => {
     )
 }
 
-// Kinda a type definition
-App.propTypes = {
-    cat: React.PropTypes.number.isRequired
-}
-
-// just some sensible defaults for props
-App.defaultProps = {
-    cat: 23
-}
 
 
 ReactDOM.render(
-    <App cat={12} txt="this is the props value"/>,
+    <App catDog={12} txt="this is the props value"/>,
     document.getElementById('app')
 )
 
