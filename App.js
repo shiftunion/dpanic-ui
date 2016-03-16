@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 
 class App extends React.Component {
     render() {
-        return <Button>I <Heart/> React</Button>
+        return <Button1>I <Heart/> React</Button1>
     }
 }
 
-class Button extends React.Component {
+class Button1 extends React.Component {
     render() {
 
         return <button>{this.props.children}</button>
