@@ -33,9 +33,6 @@ class App extends React.Component {
     }
 }
 
-
-
-
 class Wrapper extends React.Component{
     constructor() {
         super();
